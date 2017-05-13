@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Samba, Kannemann!</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <style>
+    html, body, #gif {
+    height: 100%;
+  }
+  #gif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  </style>
+</head>
+<body>
+  <div id="gif">
+    <img src="kannemann.gif" alt="Samba, Kannemann!">
+  </div>
+  <audio id="samba" src="samba.mp3" loop="loop"></audio>
+</body>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#samba").get(0).play();
+});
+</script>
+</html>
